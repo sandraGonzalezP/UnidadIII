@@ -1,3 +1,7 @@
+"""Sandra Fabiola Gonzalez Puente"""
+"""creacion nuevas tablas en la base de datos PostgreSQL usando Python."""
+
+
 import psycopg2
 from config import config
 

@@ -1,3 +1,5 @@
+"""Sandra Fabiola Gonzalez Puente"""
+"""actualizacion de los datos en una tabla PostgreSQL """
 import psycopg2
 from config import config
 

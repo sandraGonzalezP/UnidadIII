@@ -1,3 +1,5 @@
+"""Sandra Fabiola Gonzalez Puente"""
+"""Ensercion de datos en una tabla de PostgreSQL en Python."""
 import psycopg2
 from config import config
 

@@ -1,3 +1,7 @@
+"""Sandra Fabiola Gonzalez Puente"""
+"""eliminacion datos de las tablas de PostgreSQL en Python utilizando el adaptador de base de datos psycopg."""
+
+
 import psycopg2
 from config import config
 

@@ -1,3 +1,6 @@
+"""Sandra Fabiola Gonzalez Puente"""
+"""manejo de transacciones PostgresQL"""
+
 import psycopg2
 from config import config
 

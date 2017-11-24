@@ -1,3 +1,6 @@
+"""Sandra Fabiola Gonzalez Puente"""
+"""onsulta de datos de las tablas PostgreSQL en Python """
+
 import psycopg2
 from config import config
 

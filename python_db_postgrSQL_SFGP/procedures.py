@@ -1,5 +1,5 @@
-
-
+"""Sandra Fabiola Gonzalez Puente"""
+"""procedimiento almacenado de PostgreSQL en un programa de Python"""
 import psycopg2
 from config import config
 
