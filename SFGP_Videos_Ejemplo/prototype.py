@@ -1,8 +1,11 @@
+"""Sandra Fabiola Gonzalez Puente"""
+"""Its purpose is to create new objects by cloning a previously created instance"""
+
 import copy
 
 
 class Prototype:
-    def __int__(self):
+    def __init__(self):
         self._objects = {}
 
     def register_object(self, name, obj):
@@ -11,10 +14,10 @@ class Prototype:
 
     def unregister_object(self, name):
         """Unregister an object"""
-        del self.object[name]
+        del self._objects[name]
 
     def clone(self, name, **attr):
-        """clone a registered object and update its attributes"""
+        """Clone a registered object and update its attributes"""
         obj = copy.deepcopy(self._objects.get(name))
         obj.__dict__.update(attr)
         return obj
@@ -26,14 +29,13 @@ class Car:
         self.color = "Red"
         self.options = "Ex"
 
-    def __str__(self):
-        return '{}|{}|{}|'.format(self.name, self.color, self.options)
+        def __str__(self):
+            return '{} | {} | {}'.format(self.name, self.color, self.options)
 
 
 c = Car()
 prototype = Prototype()
-prototype.register_object('skylark',c)
+prototype.register_object('skylark', c)
 
 c1 = prototype.clone('skylark')
-
 print(c1)

@@ -1,3 +1,5 @@
+"""SAndra Fabiola Gonzalez Puente"""
+"""is used to transform an interface into another."""
 class Korean:
     """Korean speaker"""
 
@@ -38,12 +40,13 @@ class Adapter:
 # list to store speaker objects
 objects = []
 # Create a Koren object
-korean = Korean
+korean = Korean()
 # Create a British object
-british = British
+british = British()
 # Append the objects to the objects list
 objects.append(Adapter(korean, speak=korean.speak_korean))
 objects.append(Adapter(british, speak=british.speak_english))
 
+
 for obj in objects:
-    print("{} says '{}' \n".format(obj.name, obj.speak()))
+   print("{} says '{}' \n".format(obj.name, obj.speak()))

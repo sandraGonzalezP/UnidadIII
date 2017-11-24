@@ -1,6 +1,11 @@
+"""Sandra Fabiola Gonzalez Puente"""
+"""allows you to restrict the creation of objects belonging to a class or the value of a type to a single object."""
+
+
 class Borg():
     """Borg class making class attributes global"""
-    _shared_state = {}  
+    _shared_state = {}
+
     # Attribute dicctionary
 
     def __init__(self):
@@ -9,7 +14,8 @@ class Borg():
 
 class Singleton(Borg):  # Inherits from the Brog class
     """This class now shares all its attributes among its various instances"""
-    #this essenstially make the singleton objects an object-oribted global variable
+
+    # this essenstially make the singleton objects an object-oribted global variable
     def __init__(self, **kwargs):
         Borg.__init__(self)
         # Update the attribute dictionary by inserting a new key-value pair
@@ -21,7 +27,7 @@ class Singleton(Borg):  # Inherits from the Brog class
 
 
 # let's Create a singleton object and add our first acronym
-x = Singleton(HTTP = "Hyper Text Tansfer Protocl")
+x = Singleton(HTTP="Hyper Text Tansfer Protocl")
 # print the object
 print(x)
 

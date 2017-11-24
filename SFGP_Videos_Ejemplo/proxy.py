@@ -1,3 +1,6 @@
+"""Sandra Fabiola Gonzalez Puente"""
+"""provides an intermediary for an object to control its access.."""
+
 import time
 
 

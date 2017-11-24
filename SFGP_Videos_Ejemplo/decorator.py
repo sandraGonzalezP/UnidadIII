@@ -1,3 +1,7 @@
+"""SAndra Fabiola Gonzalez Puente"""
+"""dynamically add functionality to an Object."""
+
+
 from functools import wraps
 
 

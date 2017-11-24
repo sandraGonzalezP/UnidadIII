@@ -1,3 +1,7 @@
+"""Sandra Fabiola Gonzalez Puente"""
+"""allows establishing a chain of receiving objects through which a request made by a sending object is passed."""
+
+
 class Handler:  # Abstract handler
     """Abstract Handler"""
 

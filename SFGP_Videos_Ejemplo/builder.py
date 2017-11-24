@@ -1,3 +1,7 @@
+"""Sandra Fabiola Gonzalez Puente"""
+"""is used to allow the creation of a variety of complex objects from a source object."""
+
+
 class Directory():
     """Directory"""
 

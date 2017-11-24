@@ -1,3 +1,6 @@
+"""Sandra Fabiola Gonzalez Puente"""
+"""etermines how messages should be exchanged between different objects to solve a task"""
+
 import types # import the types modules
 class Strategy:
 
